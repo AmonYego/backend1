@@ -1,4 +1,4 @@
-from ..services.prompts import (
+from services.prompts import (
     question_generation_prompt,
     simplifification_prompt,
     similar_questions_prompt,
