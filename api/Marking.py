@@ -1,8 +1,8 @@
 from fastapi import APIRouter, UploadFile, File, Form, HTTPException
 from pydantic import BaseModel
 
-from ..services.prompts import get_level_prompt
-from ..services.ai_engine import mark_questions
+from services.prompts import get_level_prompt
+from services.ai_engine import mark_questions
 
 router = APIRouter(tags=["Mark Exams"])
 
