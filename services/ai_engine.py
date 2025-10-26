@@ -1,4 +1,4 @@
-from backend.services.prompts import (
+from ..services.prompts import (
     question_generation_prompt,
     simplifification_prompt,
     similar_questions_prompt,
@@ -6,7 +6,7 @@ from backend.services.prompts import (
 )
 import google.generativeai as genai
 from fastapi import UploadFile
-from backend.services.file_reader import extract_text
+from ..services.file_reader import extract_text
 
 genai.configure(api_key="AIzaSyARKbi8gr-3sLsw5KOEsZMUsudHA53sxBA")
 model = genai.GenerativeModel("gemini-2.5-flash")

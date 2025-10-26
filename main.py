@@ -1,10 +1,10 @@
 from fastapi import FastAPI
 
-from backend.api.Analysis import router as extract_router
-from backend.api.questions import router as questions_router
-from backend.api.Marking import router as marking_router
-from backend.api.similar import router as similar_router
-from backend.api.simplify import router as simplify_router
+from api.Analysis import router as extract_router
+from api.questions import router as questions_router
+from api.Marking import router as marking_router
+from api.similar import router as similar_router
+from api.simplify import router as simplify_router
 
 app = FastAPI(
     title="Classroom AI Backend",
